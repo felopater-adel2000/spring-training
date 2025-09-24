@@ -22,4 +22,20 @@
         <constructor-arg name="_3d" ref="draw3d"/>
     </bean>
 
+    <context:property-placeholder location="application.properties"/>
+
+    <bean id="databaseOperation" class="com.example.di.DatabaseOperation">
+        <property name="url" value="${database.url}"/>
+        <property name="userName" value="${database.username}"/>
+        <property name="password" value="${database.password}"/>
+    </bean>
+
+    <bean id="car" class="com.example.di.Car">
+        <constructor-arg name="operation" ref="databaseOperation"/>
+    </bean>
+
+    <bean id="plane" class="com.example.di.Plane">
+        <property name="operation" ref="databaseOperation"/>
+    </bean>
+
 </beans>

@@ -8,10 +8,10 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="rectangle" class="com.example.ioc.Rectangle">
+   <!-- <bean id="rectangle" class="com.example.ioc.Rectangle">
         <constructor-arg name="x" value="3"/>
         <constructor-arg name="y" value="3"/>
-    </bean>
+    </bean>-->
 
     <bean id="circle" class="com.example.ioc.Circle">
         <constructor-arg name="radius" value="3"/>

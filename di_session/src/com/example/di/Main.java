@@ -19,6 +19,12 @@ public class Main {
         square.draw2d();
         square.draw3d();
 
+        Car car = container.getBean(Car.class);
+        Plane plan = container.getBean(Plane.class);
+
+        car.insertNewCar();
+        plan.insertNewPlan();
+
         System.out.println("End Project");
     }
 
