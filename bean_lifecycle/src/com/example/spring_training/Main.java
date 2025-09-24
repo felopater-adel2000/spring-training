@@ -21,7 +21,7 @@ public class Main {
             System.out.println(c1);
             System.out.println(c2);
 
-            DatabaseOperation operation =  container.getBean("databaseOperation", DatabaseOperation.class);
+            DatabaseOperation operation =  container.getBean("init-destroy", DatabaseOperation.class);
         } catch (Exception e) {
 
         }

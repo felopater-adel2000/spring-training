@@ -27,6 +27,6 @@
         <property name="draw3d" ref="draw3d"/>
     </bean>
 
-    <bean id="databaseOperation" class="com.example.spring_training.database.DatabaseOperation" init-method="connectToDatabase" destroy-method="disconnectFromDatabase"/>
+    <bean id="init-destroy" class="com.example.spring_training.database.DatabaseOperation" init-method="connectToDatabase" destroy-method="disconnectFromDatabase"/>
 
 </beans>
