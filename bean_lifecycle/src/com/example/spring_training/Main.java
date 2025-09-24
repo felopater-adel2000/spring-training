@@ -11,11 +11,15 @@ public class Main {
 
         try(ClassPathXmlApplicationContext container = new ClassPathXmlApplicationContext("applicationContext.xml")) {
 
-            Circle c = container.getBean("prototypeCircle", Circle.class);
+            Circle c1 = container.getBean("prototypeCircle", Circle.class);
+            Circle c2 = container.getBean("prototypeCircle", Circle.class);
             Square s = container.getBean(Square.class);
 
-            c.draw();
+            c1.draw();
             s.draw();
+
+            System.out.println(c1);
+            System.out.println(c2);
 
             DatabaseOperation operation =  container.getBean("databaseOperation", DatabaseOperation.class);
         } catch (Exception e) {
