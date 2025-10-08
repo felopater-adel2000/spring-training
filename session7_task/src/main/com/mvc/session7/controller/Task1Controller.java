@@ -7,14 +7,15 @@ import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 
 @Controller
+@RequestMapping("/birthday")
 public class Task1Controller {
 
-    @RequestMapping("/birthday")
+    @RequestMapping("/")
     public String showHomePage() {
         return "task1/birthdayPage";
     }
 
-    @RequestMapping("/birthday/calculation")
+    @RequestMapping("/calculation")
     public String showCalculationPage(HttpServletRequest request, Model model) {
 
         String year = request.getParameter("txtYear");

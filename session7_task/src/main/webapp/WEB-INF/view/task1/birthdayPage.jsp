@@ -51,7 +51,7 @@
 
 <div class="input-group mb-3" id="parent">
 
-	<form action="birthday/calculation" class="form">
+	<form action="calculation" class="form">
 
 		<input class="form-control" type="number" name="txtYear" placeholder="Enter Year">
 		<input class="form-control" type="number" name="txtMonth" placeholder="Enter Month">
